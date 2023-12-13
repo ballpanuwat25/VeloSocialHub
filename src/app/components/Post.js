@@ -1,17 +1,21 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 
 function Post() {
     return (
         <div className='w-full flex justify-center items-center'>
             <div className='w-full bg-white p-3 rounded flex flex-col gap-3'>
                 <div className='flex flex-row gap-3 divide-y'>
-                    <button className='w-10 h-10 bg-primary rounded-full flex justify-center items-center hover:bg-rose-500'>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                            <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" fill="#FFF" />
-                        </svg>
-                    </button>
+                    <Link href={'/profile'} className='w-10 h-10 bg-primary rounded-full flex justify-center items-center hover:bg-rose-500'>
+                        <div
+                            className='w-10 h-10 rounded-full bg-cover bg-center bg-no-repeat cursor-pointer'
+                            style={{
+                                backgroundImage: "url('https://images.unsplash.com/photo-1638803040283-7a5ffd48dad5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                            }}
+                        />
+                    </Link>
 
                     <input className="bg-secondary appearance-none rounded-full py-2 px-4 text-gray-700 leading-tight outline-none" id="post" type="text" />
 
@@ -22,7 +26,7 @@ function Post() {
                     </button>
                 </div>
 
-                <hr/>
+                <hr />
 
                 <div className='flex flex-row gap-3'>
                     <button className='w-full h-10 bg-primary rounded-lg flex gap-2 text-white justify-center items-center hover:bg-rose-500'>
