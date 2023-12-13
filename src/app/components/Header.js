@@ -37,11 +37,57 @@ function Header() {
             </svg>
           </button>
 
-          <div className={`absolute z-50 right-1 mt-3 w-36 bg-white border border-gray-300 rounded-md shadow-lg ${isDropdownOpen ? '' : 'hidden'}`}>
+          <div className={`absolute z-50 right-1 mt-3 w-80 bg-white border border-gray-300 rounded-md shadow-lg ${isDropdownOpen ? '' : 'hidden'}`}>
             <div className='flex flex-col py-1 divide-y'>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">Notification</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">Notification</a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">Notification</a>
+              <a href="#" className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                <div className='flex flex-row gap-3 items-center'>
+                  <div className='w-10 h-10 bg-primary rounded-full flex justify-center items-center relative'>
+                    <svg className='absolute' style={{ top: 13, left: -4 }} width="111" height="18" viewBox="0 0 117 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.5666 23.1818C16.0621 23.1459 14.7367 22.6434 13.6621 21.5666C9.68597 17.5464 5.67402 13.5622 1.66207 9.54205C-1.31107 6.56284 -0.12898 1.53766 3.88297 0.281364C5.99641 -0.364731 7.93075 0.101893 9.50687 1.68124C13.483 5.62959 17.3875 9.57795 21.3278 13.5263C22.4024 14.6031 23.0114 15.8953 23.083 17.4388C23.1905 19.9872 21.3636 22.3922 18.8562 22.9665C18.4621 23.0741 17.9964 23.11 17.5666 23.1818Z" fill="#FFF" />
+                      <path d="M28.5264 0.0300293C31.5712 0.0300293 34.0429 2.47083 34.0429 5.55773C34.0429 8.64462 31.607 11.1213 28.5264 11.1572C25.4816 11.1931 22.9742 8.64462 22.9384 5.59362C22.9742 2.50672 25.4458 0.0300293 28.5264 0.0300293Z" fill="#FFF" />
+                    </svg>
+                  </div>
+
+                  <div className='w-48'>
+                    <p className='font-bold'>Velo Official has posted in Velo Social Hub: BREAK...</p>
+                    <p className='text-xs'>2 days ago</p>
+                  </div>
+                </div>
+
+                <div className='w-3 h-3 bg-primary rounded-full' />
+              </a>
+
+              <a href="#" className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                <div className='flex flex-row gap-3 items-center'>
+                  <div className='w-10 h-10 bg-primary rounded-full flex justify-center items-center relative'>
+                    <svg className='absolute' style={{ top: 13, left: -4 }} width="111" height="18" viewBox="0 0 117 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.5666 23.1818C16.0621 23.1459 14.7367 22.6434 13.6621 21.5666C9.68597 17.5464 5.67402 13.5622 1.66207 9.54205C-1.31107 6.56284 -0.12898 1.53766 3.88297 0.281364C5.99641 -0.364731 7.93075 0.101893 9.50687 1.68124C13.483 5.62959 17.3875 9.57795 21.3278 13.5263C22.4024 14.6031 23.0114 15.8953 23.083 17.4388C23.1905 19.9872 21.3636 22.3922 18.8562 22.9665C18.4621 23.0741 17.9964 23.11 17.5666 23.1818Z" fill="#FFF" />
+                      <path d="M28.5264 0.0300293C31.5712 0.0300293 34.0429 2.47083 34.0429 5.55773C34.0429 8.64462 31.607 11.1213 28.5264 11.1572C25.4816 11.1931 22.9742 8.64462 22.9384 5.59362C22.9742 2.50672 25.4458 0.0300293 28.5264 0.0300293Z" fill="#FFF" />
+                    </svg>
+                  </div>
+
+                  <div className='w-48'>
+                    <p>Velo Official has posted in Velo Social Hub: 🚨 Greet...</p>
+                    <p className='text-xs'>2 days ago</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                <div className='flex flex-row gap-3 items-center'>
+                  <div
+                    className='w-10 h-10 rounded-full bg-cover bg-center bg-no-repeat'
+                    style={{
+                      backgroundImage: "url('https://images.unsplash.com/photo-1694434943114-c8ea2049f781?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+                    }}
+                  />
+
+                  <div className='w-48'>
+                    <p><span className='font-bold'>Albert S. Varner</span> sent you a friend request.</p>
+                    <p className='text-xs'>4 days ago • Accepted</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>

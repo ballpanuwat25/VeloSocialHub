@@ -4,8 +4,8 @@ import React from 'react'
 
 function Post() {
     return (
-        <div className='w-full flex justify-center items-center mb-3'>
-            <div className='w-1/2 bg-white p-3 rounded flex flex-col gap-3'>
+        <div className='w-full flex justify-center items-center'>
+            <div className='w-full bg-white p-3 rounded flex flex-col gap-3'>
                 <div className='flex flex-row gap-3 divide-y'>
                     <button className='w-10 h-10 bg-primary rounded-full flex justify-center items-center hover:bg-rose-500'>
                         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">

@@ -3,15 +3,18 @@ import Post from './Post'
 
 function Timeline() {
     return (
-        <div className='w-full flex flex-col justify-center items-center mt-3 pb-3'>
-            <Post />
+        <div className='container mx-auto w-full flex flex-col justify-center items-center mt-3 pb-3'>
+            <div className='w-1/2 bg-white rounded mb-3'>
+                <Post />
+            </div>
 
             <div className='w-1/2 bg-white p-3 rounded flex flex-col gap-3 mb-3'>
                 <div className='flex flex-row justify-between'>
                     <div className='flex flex-row gap-3'>
-                        <button className='w-10 h-10 bg-primary rounded-full flex justify-center items-center hover:bg-rose-500'>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                                <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" fill="#FFF" />
+                        <button className='w-10 h-10 bg-primary rounded-full flex justify-center items-center hover:bg-rose-500 relative'>
+                            <svg className='absolute' style={{ top: 13, left: -4 }} width="111" height="18" viewBox="0 0 117 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5666 23.1818C16.0621 23.1459 14.7367 22.6434 13.6621 21.5666C9.68597 17.5464 5.67402 13.5622 1.66207 9.54205C-1.31107 6.56284 -0.12898 1.53766 3.88297 0.281364C5.99641 -0.364731 7.93075 0.101893 9.50687 1.68124C13.483 5.62959 17.3875 9.57795 21.3278 13.5263C22.4024 14.6031 23.0114 15.8953 23.083 17.4388C23.1905 19.9872 21.3636 22.3922 18.8562 22.9665C18.4621 23.0741 17.9964 23.11 17.5666 23.1818Z" fill="#FFF" />
+                                <path d="M28.5264 0.0300293C31.5712 0.0300293 34.0429 2.47083 34.0429 5.55773C34.0429 8.64462 31.607 11.1213 28.5264 11.1572C25.4816 11.1931 22.9742 8.64462 22.9384 5.59362C22.9742 2.50672 25.4458 0.0300293 28.5264 0.0300293Z" fill="#FFF" />
                             </svg>
                         </button>
 
@@ -131,9 +134,10 @@ function Timeline() {
             <div className='w-1/2 bg-white p-3 rounded flex flex-col gap-3'>
                 <div className='flex flex-row justify-between'>
                     <div className='flex flex-row gap-3'>
-                        <button className='w-10 h-10 bg-primary rounded-full flex justify-center items-center hover:bg-rose-500'>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                                <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" fill="#FFF" />
+                        <button className='w-10 h-10 bg-primary rounded-full flex justify-center items-center hover:bg-rose-500 relative'>
+                            <svg className='absolute' style={{ top: 13, left: -4 }} width="111" height="18" viewBox="0 0 117 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5666 23.1818C16.0621 23.1459 14.7367 22.6434 13.6621 21.5666C9.68597 17.5464 5.67402 13.5622 1.66207 9.54205C-1.31107 6.56284 -0.12898 1.53766 3.88297 0.281364C5.99641 -0.364731 7.93075 0.101893 9.50687 1.68124C13.483 5.62959 17.3875 9.57795 21.3278 13.5263C22.4024 14.6031 23.0114 15.8953 23.083 17.4388C23.1905 19.9872 21.3636 22.3922 18.8562 22.9665C18.4621 23.0741 17.9964 23.11 17.5666 23.1818Z" fill="#FFF" />
+                                <path d="M28.5264 0.0300293C31.5712 0.0300293 34.0429 2.47083 34.0429 5.55773C34.0429 8.64462 31.607 11.1213 28.5264 11.1572C25.4816 11.1931 22.9742 8.64462 22.9384 5.59362C22.9742 2.50672 25.4458 0.0300293 28.5264 0.0300293Z" fill="#FFF" />
                             </svg>
                         </button>
 
